@@ -6,3 +6,7 @@ src/**
 .gitignore
 tsconfig.json
 vsc-extension-quickstart.md
+*.zip
+*.vsix
+assets/*.gif
+.editorconfig
