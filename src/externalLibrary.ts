@@ -16,9 +16,6 @@ export interface INonModule {
   globalDependencies?: string[];
 }
 
-// TODO: check if the file is already added
-// https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/basics/add-an-external-library
-
 export default class ExternalLibrary {
   /**
    * Update the external configuration
