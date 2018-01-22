@@ -1,4 +1,9 @@
 {
+  "author": {
+    "name": "Elio Struyf",
+    "email": "info@estruyf.be",
+    "url": "https://www.eliostruyf.com"
+  },
   "name": "spfx-script-check",
   "displayName": "SPFx Script Check",
   "description": "This extension allows you to check your external library URL and include it into your configuration file. Created by Elio Struyf.",

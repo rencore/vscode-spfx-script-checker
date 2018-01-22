@@ -4,6 +4,7 @@ This extension for Visual Studio Code makes it easier for you as a SharePoint Fr
 
 The extension is powered by the same APIs of the [SharePoint Framework Sript Check](https://rencore.com/sharepoint-framework/script-check/) page build by [Waldek Mastykarz](https://twitter.com/waldekm) from [Rencore](https://rencore.com).
 
+> **Info**: I recommend the following article if you want to know more about correctly referencing JavaScript libraries: [Correctly reference scripts with Rencore Script Check](https://rencore.com/blog/correctly-reference-scripts-rencore-script-check/).
 
 ## What can this extension do for me?
 
