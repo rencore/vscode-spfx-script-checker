@@ -1,0 +1,57 @@
+{
+  "name": "spfx-script-check",
+  "displayName": "SPFx Script Check",
+  "description": "This extension allows you to check your external library URL and include it into your configuration file. Created by Elio Struyf.",
+  "version": "0.0.1",
+  "publisher": "eliostruyf",
+  "icon": "assets/spfx-scriptcheck.png",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+      "SharePoint",
+      "SPFx",
+      "TypeScript",
+      "React",
+      "Framework"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estruyf/vscode-spfx-script-checker"
+  },
+  "activationEvents": [
+    "onCommand:spfx.scriptcheck"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "spfx.scriptcheck",
+        "title": "SPFx Script Check"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "@types/request": "^2.0.12",
+    "@types/request-promise": "^4.1.39",
+    "typescript": "^2.5.3",
+    "vscode": "^1.1.5"
+  },
+  "dependencies": {
+    "request": "2.83.0",
+    "request-promise": "4.2.2"
+  }
+}
