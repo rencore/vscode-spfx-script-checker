@@ -1,4 +1,4 @@
-# Visual Studio Code - SharePoint Framework Script Checker
+# Visual Studio Code - SharePoint Framework Script Check Extension
 
 This extension for Visual Studio Code makes it easier for you as a SharePoint Framework developer to correctly reference the external JavaScript libraries in your solutions.
 
