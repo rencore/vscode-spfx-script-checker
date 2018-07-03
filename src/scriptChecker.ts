@@ -29,22 +29,27 @@ export default class ScriptChecker {
         body: JSON.stringify(scriptData)
       });
 
-      if (scriptTypeData) {
-        const script: IScriptCheck = JSON.parse(scriptTypeData);
-        if (script.scriptType) {
-          switch (script.scriptType) {
-            case "module":
-              return ScriptType.module;
-            case "non-module":
-              return ScriptType.nonModule;
-            default:
-              return ScriptType.module;
-          }
-        }
+      if (!scriptTypeData) {
+        return null;
+      }
+
+      const script: IScriptCheck = JSON.parse(scriptTypeData);
+      if (!script.scriptType) {
+        return null;
+      }
+
+      switch (script.scriptType) {
+        case "module":
+          return ScriptType.module;
+        case "non-module":
+          return ScriptType.nonModule;
+        default:
+          return ScriptType.module;
       }
 
       return null;
-    } catch (err) {
+    }
+    catch (err) {
       return 'Sorry, something went wrong';
     }
   }

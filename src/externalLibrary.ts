@@ -27,7 +27,8 @@ export default class ExternalLibrary {
   public static update(configJson: IConfig, type: ScriptType, moduleName: string, url: string, globalName: string, scriptDependencies: string) {
     if (type === ScriptType.module) {
       configJson.externals[moduleName] = url;
-    } else {
+    }
+    else {
       // Check if it is a plugin or a module
       if (globalName) {
         configJson.externals[moduleName] = {
@@ -35,13 +36,15 @@ export default class ExternalLibrary {
           globalName: globalName,
           globalDependencies: scriptDependencies.split(',')
         };
-      } else {
+      }
+      else {
         configJson.externals[moduleName] = {
           path: url,
           globalName: moduleName
         };
       }
     }
+    
     return configJson;
   }
 }

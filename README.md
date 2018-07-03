@@ -1,35 +1,37 @@
-# Visual Studio Code - SharePoint Framework Script Check Extension
+# Rencore SharePoint Framework Script Check Visual Studio Code extension
 
-This extension for Visual Studio Code makes it easier for you as a SharePoint Framework developer to correctly reference the external JavaScript libraries in your solutions.
+[![Rencore logo](./assets/rencore.png)](https://rencore.com)
 
-The extension is powered by the same APIs of the [SharePoint Framework Script Check](https://rencore.com/sharepoint-framework/script-check/) that was built by [Waldek Mastykarz](https://twitter.com/waldekm) from [Rencore](https://rencore.com).
+Using the [Rencore](https://rencore.com) Script Check Visual Studio Code extension you can easily reference external libraries in SharePoint Framework projects the right way.
+Additionally, you can ensure, that the CDN they are using is well performing.
 
-> **Info**: I recommend the following article if you want to know more about correctly referencing JavaScript libraries: [Correctly reference scripts with Rencore Script Check](https://rencore.com/blog/correctly-reference-scripts-rencore-script-check/).
+> **Info**: To learn more about correctly referencing JavaScript libraries in SharePoint Framework projects, read the [Correctly reference scripts with Rencore Script Check](https://rencore.com/blog/correctly-reference-scripts-rencore-script-check/) article.
 
-## What can this extension do for me?
+## What can this extension do for me
 
-### Checking and including an external library to your solution
+### Check and include an external library in your SharePoint Framework project
 
-Example of including `jQuery` to your solution.
+Example of including `jQuery` in your project.
 
-![Including jQuery to the solution](./assets/script-global.gif)
+![Including jQuery to the project](./assets/script-global.gif)
 
-> **Info**: for jQuery the extension will ask you two questions: URL and module name. This is because jQuery is a module. For non-module scripts / libraries, you will have to provide more information.
+> **Info**: for jQuery, the extension will ask you two questions: URL and module name. This is because jQuery is a module. For non-module scripts, you will have to provide more information.
 
-### Adding a non-module library to the solution
+### Add a non-module library to your SharePoint Framework project
 
 Example of including `Cycle` which is a `jQuery` plugin.
 
-![Including Cycle to the solution](./assets/script-plugin.gif)
+![Including Cycle to the project](./assets/script-plugin.gif)
 
 ## Usage
 
 Start by opening the command prompt:
+
 - Windows `⇧+ctrl+P`
 - Mac: `⇧+⌘+P`
 
-Type: `SPFx Script Check` and provide the values to a couple of questions.
+Type: `SPFx Script Check` and provide information about the script you want to include in your project.
 
 ## Feedback and snippet ideas
 
-Feedback and ideas are always welcome. Please submit them via creating an issue in the project repository: [issue list](https://github.com/estruyf/vscode-spfx-script-checker/issues).
+If you have ideas for new features or feedback, let us know by creating an issue in the [issue list](https://github.com/rencoreab/vscode-spfx-script-checker/issues).
